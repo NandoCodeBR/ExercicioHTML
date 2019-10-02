@@ -9,7 +9,13 @@
 </head>
 
 <body>
-    <table border="1"> Lista das melhores empresas
+    <table border="1" width=40%>
+        <tr>
+            <!--Aqui temos um atributo chamado Colspan ("Col" de Coluna e "Span" de Extensão)
+            Para mesclar um certo número de células naquela linha, no caso eu mesclei 5 colunas
+            Que é o número de colunas que eu coloquei na tabela. -->
+            <th colspan="5">Lista das melhores empresas</th>
+        </tr> 
         <!--Aqui temos uma tabela sendo criada com a tag Table
         Usamos a tag TR (Table Row) para criar uma linha na tabela
         E então usamos a tag TH (Table Header) para criar o cabeçalho da tabela-->
@@ -29,14 +35,17 @@
             <td>2018</td>
             <td>2,5 bi</td>
             <td>Bill Gates</td>
-            <td>Área de TI</td>
+            <!--Coloquei um Rowspan ("Row" de linha e "Span" de extensão
+            Para mesclar duas linhas na mesma coluna. -->
+            <td rowspan="2">Área de TI</td>
         </tr>
         <tr>
+            <!-- Não precisei colocar 5 Table Datas porque eu mesclei
+            Duas linhas no Rowspan na linha anterior, que no caso seria a Área de Atuação-->
             <td>Google</td>
             <td>2019</td>
             <td>3 bi</td>
             <td>Larry Page e Sergey Brin</td>
-            <td>Área de TI</td>
         </tr>
         <tr>
             <td>Apple</td>
