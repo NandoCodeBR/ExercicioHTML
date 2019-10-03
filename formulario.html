@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <!--Criação de um formulário de login e senha
+        Usando o input type="text" para texto normal e o input type="password" para senhas-->
+        login:<br><input type="text"><br>
+        senha:<br>
+        <input type="password"><br>
+        <input type="button" value="logar">
+        
+        
+    </form>
+    <form>
+        <!--Criação de um formulário simples de cadastro, usando várias tags para uso na página
+        -->
+        <h2>Cadastre-se</h2>
+        <br>Login:<br>
+        <input type="text" name="login">
+        <br>
+        <h3>Sexo<br></h3>
+        <!--Radio buttons tem que ter o mesmo nome para selecionar apenas um-->
+        <input type="radio" name="sexo" id="f"> Feminino<br>
+        <input type="radio" name="sexo" id="m"> Masculino<br>
+        <br>
+        <h3>Interesses<br></h3>
+        <!--Checkbox tem que ter o mesmo nome para saber quais caixas daquele grupo foram selecionadas-->
+        <input type="checkbox" name="Interesses" id="Futebol" value="Futebol"> futebol<br>
+        <input type="checkbox" name="Interesses" id="Volei" value="Volei"> Volei<br>
+        <input type="checkbox" name="Interesses" id="Basquete" value="Basquete"> Basquete<br>
+        <input type="checkbox" name="Interesses" id="Handebol" value="Handebol"> Handebol<br>
+        <br>
+        <h3>Estado</h3>
+        <select name="selecao">
+            <!-- Select é uma lista na qual só pode ser escolhido apenas um item
+            Economiza espaço na página-->
+            <option value="SP" name="SP">SP</option>
+            <option value="RJ" name="RJ">RJ</option>
+            <option value="AM" name="AM">AM</option>
+            <option value="SC" name="SC">SC</option>
+            <option value="MG" name="MG">MG</option>
+        </select>
+        <br>
+        <h3>Observações</h3>
+        <!-- Textarea é uma área na qual você pode digitar textos
+        Muito usado para deixar comentários em blogs-->
+        <textarea></textarea><br>
+        <!--Botão submit envia os dados para a página selecionada
+        como não foi declarada nenhuma página, é enviada para a própria página-->
+        <input type="submit" value="Cadastrar">
+
+    </form>
+</body>
+</html>
